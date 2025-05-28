@@ -1,1 +1,3 @@
 # SungJinwoo-AI-Journey
+28/05/25
+Ml learning ....
