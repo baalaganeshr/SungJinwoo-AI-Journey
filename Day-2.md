@@ -1,4 +1,11 @@
-# LeetCode 9. Palindrome Number — Solution Documentation Date : 29/5/25
+
+- #Physics exam completed ✅
+- #LeetCode problem: [Palindrome]
+- #Solution approach: [Simple Method]
+- #AI concept learned: [Microsoft Azure Multi agent setup]
+- #Tomorrow's EVS exam plan: [5:30 to 7:00 am]
+- # LeetCode 9. Palindrome Number — Solution Documentation Date : 29/5/25
+## Day 2 - 29/05/25
 
 ## Problem Statement
 
