@@ -88,4 +88,92 @@ class Solution:
 
 ---
 
-**Happy coding!** 🎉
+**Happy coding!** 🎉 And the Microsoft ai learning 
+# 🚀 AI Agents Learning Course — Beginner-Friendly Setup Guide
+
+Want to get hands-on with this course on your own computer?  
+Follow these simple steps to get started!
+
+---
+
+## 1. 📥 Clone This Repository
+
+First, download the course files to your computer.
+
+```bash
+git clone https://github.com/baalaganeshr/ai-agents-learning.git
+cd ai-agents-learning
+2. 🐍 Install Python 3.11
+Go to the Python 3.11 download page.
+
+Download and install Python 3.11.
+
+IMPORTANT: During setup, check the box that says Add Python to PATH.
+
+3. 🧪 Create Your Own Python Environment
+This keeps your course code separate from other projects.
+
+bash
+Copy
+Edit
+py -3.11 -m venv venv311
+venv311\Scripts\activate
+4. 📦 Install All Required Packages
+This command installs everything the course needs.
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+5. 🔒 Set Up Your Secret Keys (.env File)
+Copy the example file:
+
+bash
+Copy
+Edit
+cp .env.example .env
+(Or, copy and rename it using File Explorer if you prefer)
+
+Open the new .env file in VS Code or Notepad.
+
+Get your GitHub Personal Access Token (how-to guide here).
+
+Paste your token into the file like this:
+
+env
+Copy
+Edit
+GITHUB_TOKEN="ghp_yourTokenHere"
+Save the file.
+
+6. 💻 Open and Run Notebooks in Visual Studio Code
+Make sure you have both the Python and Jupyter extensions installed in VS Code.
+
+Open the project folder (ai-agents-learning) in VS Code.
+
+Open any notebook file (it ends in .ipynb, like semantic-kernel.ipynb).
+
+At the top right, select the Python 3.11 (venv311) kernel if it asks.
+
+Click the “Run” (▶️) button or use Shift+Enter to run code cells.
+
+7. 🛠 Troubleshooting
+Packages not installing? Double-check that you’re using Python 3.11, not a newer version.
+
+Authentication errors? Make sure your GitHub token is correct in your .env file.
+
+.env file issues? Never upload/share your .env file—it should be private.
+
+Example .env File (GitHub Models Only)
+env
+Copy
+Edit
+GITHUB_TOKEN="ghp_yourTokenHere"
+Common Commands Cheat Sheet
+Command	What it does
+py -3.11 -m venv venv311	Create a virtual Python environment
+venv311\Scripts\activate	Activate your environment (Windows)
+pip install -r requirements.txt	Install all course dependencies
+cp .env.example .env	Create your secret settings file
+
+
