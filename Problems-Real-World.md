@@ -1,4 +1,4 @@
-# 🎯 AI Automation Opportunities for Indian SMEs
+#DAY 1 30/5/25 🎯 AI Automation Opportunities for Indian SMEs
 
 ## 📊 SME MARKET OVERVIEW
 * **110+ million SMEs** in India (28% of GDP)
