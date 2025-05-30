@@ -87,4 +87,74 @@ class Solution:
 * If you get a **SyntaxError** on LeetCode, check that you are using **Python3** as your language.
 * If you get `NameError: global name 'Solution' is not defined`, make sure you did **not remove** the `class Solution:` header.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# DAY # Date 30/5/25 Roman Numeral to Integer Converter
+
+This project contains a Python solution for converting Roman numeral strings into integers.
+
 ---
+
+## Problem Overview
+
+Roman numerals are written from largest to smallest from left to right, but sometimes a smaller numeral comes before a larger one, meaning subtraction (e.g., IV = 4, IX = 9). This code handles both normal and subtraction cases to give the correct integer value.
+
+---
+
+## Solution Approach
+
+1. **Mapping Creation:**  
+   A dictionary (`roman_to_int`) maps each Roman numeral to its integer value.
+
+2. **Reverse Iteration:**  
+   Iterate through the input string from right to left. This allows easy comparison to handle subtraction cases.
+
+3. **Subtraction Handling:**  
+   - If the current numeral is less than the previous (in the original string), subtract its value from the total.
+   - Otherwise, add its value to the total.
+
+4. **Final Calculation:**  
+   The variable `total` stores the final integer result.
+
+Example
+Input: "MCMXCIV"
+
+Output: 1994
+
+Explanation:
+
+M (1000), CM (900), XC (90), IV (4)
+
+1000 + 900 + 90 + 4 = 1994
+
+
+
+---
+
+## Python Solution
+
+```python
+class Solution:
+    def romanToInt(self, s: str) -> int:
+        roman_to_int = {
+            'I': 1,
+            'V': 5,
+            'X': 10,
+            'L': 50,
+            'C': 100,
+            'D': 500,
+            'M': 1000
+        }
+        
+        total = 0
+        prev_value = 0
+        
+        for char in reversed(s):
+            current_value = roman_to_int[char]
+            if current_value < prev_value:
+                total -= current_value
+            else:
+                total += current_value
+            prev_value = current_value
+        
+        return total
+
