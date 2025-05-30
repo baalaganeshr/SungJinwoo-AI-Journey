@@ -35,36 +35,4 @@ Final Comparison:
 
 If the number has even digits: x == reversed_half.
 If the number has odd digits: x == reversed_half // 10 (ignore the middle digit).
-Final Solution (Python 3)
-class Solution:
-    def isPalindrome(self, x: int) -> bool:
-        if x < 0 or (x != 0 and x % 10 == 0):
-            return False
-        reversed_half = 0
-        while x > reversed_half:
-            digit = x % 10
-            reversed_half = reversed_half * 10 + digit
-            x = x // 10
-        return x == reversed_half or x == reversed_half // 10
-Beginner-Friendly Version (No Type Hints)
-If you need to run it in Python2 or without type hints, use:
-
-class Solution:
-    def isPalindrome(self, x):
-        if x < 0 or (x != 0 and x % 10 == 0):
-            return False
-        reversed_half = 0
-        while x > reversed_half:
-            digit = x % 10
-            reversed_half = reversed_half * 10 + digit
-            x = x // 10
-        return x == reversed_half or x == reversed_half // 10
-Key Points
-No string conversion needed.
-Handles negative numbers and zeros correctly.
-Efficient: Time complexity is O(log₁₀(n)), Space complexity O(1).
-Always use Python3 on LeetCode for type hints support!
-Troubleshooting
-If you get a SyntaxError on LeetCode, check that you are using Python3 as your language.
-If you get NameError: global name 'Solution' is not defined, make sure you did not remove the class Solution: header.
 
