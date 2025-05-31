@@ -1,69 +1,81 @@
-# Day 31/5/25  LeetCode 14. Longest Common Prefix — Solution Documentation
+# 🐞 Troubleshooting Log - AI Agents Setup
 
-## Problem Statement
+## Common Issues & Quick Fixes
 
-Given an array of strings, write a function to find the **longest common prefix** string amongst them.  
-If there is no common prefix, return an empty string `""`.
+### 1. VS Code Not Using Correct Environment
+**Problem:** VS Code using wrong Python/kernel
+**Fix:**
+- Press `Ctrl+Shift+P` → "Python: Select Interpreter"
+- Choose `venv311\Scripts\python.exe`
+- Or click kernel selector (top-right in notebook)
 
-### Example
+### 2. Module Not Found Errors
+**Problem:** `ModuleNotFoundError: No module named 'dotenv'`
+**Fix:**
 
-- Input: `strs = ["flower","flow","flight"]`  
-  Output: `"fl"`
-- Input: `strs = ["dog","racecar","car"]`  
-  Output: `""`
+# Make sure venv is active first
+.\venv311\Scripts\Activate.ps1
+pip install python-dotenv
+3. Pip Installing to Wrong Location
+Problem: Packages installing globally instead of venv
+Fix:
+bash# Always activate venv first
+.\venv311\Scripts\Activate.ps1
+# Then install
+pip install package-name
+4. Azure OpenAI Connection Errors
+Problem: API connection failed, authentication errors
+Fix:
 
-**Constraints:**
-- `1 <= strs.length <= 200`
-- `0 <= strs[i].length <= 200`
-- `strs[i]` consists of only lowercase English letters.
+Check .env file has correct values from Azure Portal:
 
----
+AZURE_OPENAI_API_KEY=your-key-here
+AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com/
+AZURE_OPENAI_CHAT_DEPLOYMENT_NAME=your-deployment-name
 
-## Approach
+No quotes, no spaces, exact match from Azure Portal
 
-We use the **Vertical Scanning** method:
+5. Wrong Method Names
+Problem: AttributeError: no attribute 'complete'
+Fix: Use correct Semantic Kernel pattern:
+pythonfrom semantic_kernel.functions import KernelFunctionFromPrompt
 
-1. Compare characters at the same position in every string.
-2. Stop at the first mismatch or the end of the shortest string.
-3. Return the prefix up to that position.
+kernel_function = KernelFunctionFromPrompt(
+    function_name="chat",
+    prompt="You are helpful. {{$input}}"
+)
 
----
+result = await kernel_function.invoke(kernel=kernel, input="Hello")
+6. Async Function Issues
+Problem: Getting <coroutine object> instead of result
+Fix:
+pythonimport asyncio
 
-## Step-by-Step Algorithm
+async def main():
+    result = await kernel_function.invoke(kernel=kernel, input="Hello")
+    print(result)
 
-1. **Check for Empty Input:**  
-   Return `""` if the input list is empty.
-2. **Find the Length of the Shortest String:**  
-   The common prefix cannot be longer than the shortest word.
-3. **Compare Characters Vertically:**  
-   - For each character index up to the minimum length:
-     - Check if all strings share the same character at this position.
-     - If a mismatch is found, return the prefix found so far.
-     - Otherwise, add the character to the prefix.
-4. **Return Result:**  
-   Return the accumulated prefix after checking all character positions.
+# Run async function
+asyncio.run(main())
+7. PowerShell Navigation
+Problem: Can't change directories in PowerShell
+Fix:
+bash# Use cd command to navigate
+cd D:\python\ai-agents-learning
+# Then activate venv
+.\venv311\Scripts\Activate.ps1
+🎯 Quick Checklist Before Running Code
 
----
+ Virtual environment activated (venv311)
+ Correct kernel selected in VS Code
+ .env file has all required values
+ All packages installed in venv
+ Using await for async functions
 
-## Solution Code (Python)
+💡 Pro Tips
 
-```python
-from typing import List
-
-class Solution:
-    def longestCommonPrefix(self, strs: List[str]) -> str:
-        if not strs:
-            return ""
-        
-        min_len = min(len(s) for s in strs)
-        common_prefix = []
-        
-        for i in range(min_len):
-            current_char = strs[0][i]
-            for s in strs:
-                if s[i] != current_char:
-                    return ''.join(common_prefix)
-            common_prefix.append(current_char)
-        
-        return ''.join(common_prefix)
+Always activate venv before installing packages
+Double-check Azure Portal values exactly
+Read error messages carefully - they tell you what's missing
+Use print(sys.executable) to verify correct Python path
 
