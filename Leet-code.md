@@ -227,5 +227,114 @@ class Solution:
             common_prefix.append(current_char)
         
         return ''.join(common_prefix)
+```
+# Day-5 20.Valid Parentheses
 
+> **LeetCode Problem**: Check if parentheses, brackets, and braces are properly balanced and closed in correct order.
+
+## 🎯 Problem Description
+
+Given a string containing only `()`, `{}`, and `[]` characters, determine if the brackets are valid.
+
+**Valid means:**
+- Every opening bracket has a matching closing bracket
+- Brackets are closed in the correct order
+- Each closing bracket matches the most recent unmatched opening bracket
+
+## 📝 Examples
+
+| Input | Output | Explanation |
+|-------|--------|-------------|
+| `"()"` | `true` | Simple pair matches |
+| `"()[]{}"` | `true` | Multiple pairs in sequence |
+| `"(]"` | `false` | Wrong bracket type |
+| `"([)]"` | `false` | Wrong closing order |
+| `"{[]}"` | `true` | Nested brackets |
+
+## 💡 Solution Approach
+
+**Stack-based solution:**
+1. Use a stack to track opening brackets
+2. For each character:
+   - **Opening bracket** → Push to stack
+   - **Closing bracket** → Check if it matches the top of stack
+3. String is valid if stack is empty at the end
+
+**Time Complexity:** O(n)  
+**Space Complexity:** O(n)
+
+## 🔧 Implementation
+
+```python
+class Solution:
+    def isValid(self, s: str) -> bool:
+        stack = []
+        # Map each closing bracket to its opening bracket
+        bracket_map = {')': '(', '}': '{', ']': '['}
+        
+        for char in s:
+            if char in bracket_map:  # Closing bracket
+                # Check if stack is empty or top doesn't match
+                if not stack or stack.pop() != bracket_map[char]:
+                    return False
+            else:  # Opening bracket
+                stack.append(char)
+        
+        # Valid if no unmatched opening brackets remain
+        return len(stack) == 0
+```
+
+## 🧪 Test Cases
+
+```python
+def test_valid_parentheses():
+    solution = Solution()
+    
+    # Test cases
+    assert solution.isValid("()") == True
+    assert solution.isValid("()[]{}")  == True
+    assert solution.isValid("(]") == False
+    assert solution.isValid("([)]") == False
+    assert solution.isValid("{[]}") == True
+    assert solution.isValid("") == True  # Empty string
+    
+    print("All test cases passed! ✅")
+
+# Run tests
+test_valid_parentheses()
+```
+
+## 🚀 How to Run
+
+```bash
+# Clone the repository
+git clone <your-repo-url>
+
+# Navigate to the directory
+cd valid-parentheses
+
+# Run the solution
+python valid_parentheses.py
+
+# Run tests
+python test_valid_parentheses.py
+```
+
+## 🤔 Key Insights
+
+- **Why Stack?** LIFO (Last In, First Out) nature perfectly matches bracket closing order
+- **Edge Cases:** Empty string (valid), single bracket (invalid), mixed types
+- **Optimization:** Early return when mismatch found
+
+## 📚 Related Problems
+
+- **Remove Invalid Parentheses** (Hard)
+- **Generate Parentheses** (Medium)
+- **Longest Valid Parentheses** (Hard)
+
+---
+
+**Author:** [Your GitHub Username]  
+**Difficulty:** Easy  
+**Tags:** `Stack`, `String`, `LeetCode`
 
