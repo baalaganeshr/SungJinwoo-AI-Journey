@@ -178,10 +178,24 @@ ollama pull codellama:7b
 - Workflow components: Chat trigger → AI Agent → Memory
 
 ## Testing Results
-[Hello there How can i assist you ?]
+[hello
+
+Hello!
+
+can tell me some joke
+
+Sure! Here's a joke for you:
+
+Why was the math book sad?
+
+Because it had too many problems.
+
+I hope that made you smile!
+
+]
 
 ## Business Applications Identified
-[List potential commercial uses]
+[Integrate mcp server]
 
 ## Next Steps
 [Tomorrow's Python exam + Azure access plan]
