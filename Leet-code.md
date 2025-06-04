@@ -595,3 +595,97 @@ test()
 
 **Simple and efficient!** 🎯
 
+
+# Remove Element
+
+**Problem:** Remove all instances of a specific value from an array in-place.
+
+**Date:** June 4, 2025 | **Day:** -8
+
+## The Problem
+
+Given array `nums` and value `val`, remove all occurrences of `val`. Return count of remaining elements.
+
+**Example:**
+```
+Input:  nums = [3,2,2,3], val = 3
+Output: nums = [2,2,_,_], return 2
+```
+
+## Solution
+
+**Idea:** Use one pointer to track where to place non-target elements.
+
+```python
+class Solution:
+    def removeElement(self, nums, val):
+        k = 0  # Position for next good element
+        
+        for i in range(len(nums)):
+            if nums[i] != val:
+                nums[k] = nums[i]
+                k += 1
+        
+        return k
+```
+
+## How It Works
+
+1. **k pointer** = where to put next good element
+2. **Check each element** = if not equal to val, keep it
+3. **Move good elements forward** = copy to position k
+4. **Count survivors** = k is the final count
+
+## Step by Step
+
+```
+nums = [3,2,2,3], val = 3
+
+i=0: nums[0]=3, equals val → skip
+     [3,2,2,3], k=0
+
+i=1: nums[1]=2, not val → keep
+     [2,2,2,3], k=1
+
+i=2: nums[2]=2, not val → keep  
+     [2,2,2,3], k=2
+
+i=3: nums[3]=3, equals val → skip
+     [2,2,2,3], k=2
+
+Result: First 2 elements [2,2], return 2
+```
+
+## Test It
+
+```python
+def test():
+    solution = Solution()
+    
+    # Test 1
+    nums1 = [3,2,2,3]
+    k1 = solution.removeElement(nums1, 3)
+    print(f"Result: {nums1[:k1]}, k={k1}")  # [2,2], k=2
+    
+    # Test 2  
+    nums2 = [0,1,2,2,3,0,4,2]
+    k2 = solution.removeElement(nums2, 2)
+    print(f"Result: {nums2[:k2]}, k={k2}")  # [0,1,3,0,4], k=5
+
+test()
+```
+
+## Key Points
+
+✅ **Modifies array in-place**  
+✅ **Order may change (that's okay)**  
+✅ **Only first k elements matter**  
+✅ **Single pass through array**
+
+## Time & Space
+
+- **Time:** O(n) - Check each element once
+- **Space:** O(1) - Only use one extra pointer
+
+**Simple and direct.** 🎯
+
