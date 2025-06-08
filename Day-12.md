@@ -57,3 +57,4 @@ Space: O(1) – In-place, except when all digits are 9 (O(n) for the result).
 Efficiently handles all cases, including when a new digit is needed.
 
 Optimized for time and space.
+
