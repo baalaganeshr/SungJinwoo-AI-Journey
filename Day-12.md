@@ -57,4 +57,8 @@ Space: O(1) – In-place, except when all digits are 9 (O(n) for the result).
 Efficiently handles all cases, including when a new digit is needed.
 
 Optimized for time and space.
+## Today i work on the vs code to develop the chatbot using hugging face but im not just copy paste the code and it gives the output 
+![WhatsApp Image 2025-06-08 at 11 50 55_81bd319d](https://github.com/user-attachments/assets/854968b3-adaf-48b5-9de9-d792a204b218)
 
+![WhatsApp Image 2025-06-08 at 11 51 17_60ad927b](https://github.com/user-attachments/assets/1d8f1f9b-4e27-4177-b341-5612b48eb799)
+![WhatsApp Image 2025-06-08 at 11 53 46_8da6d95c](https://github.com/user-attachments/assets/2a0363ed-ab9e-4e81-b196-a67577c36da2)
