@@ -1,6 +1,6 @@
 # Day 13: Add Binary (9/6/25)
 
-## 📋 Problem Statement
+## 📋 Problem   Statement
 Given two binary strings `a` and `b`, return their sum as a binary string.
 
 **Examples:**
