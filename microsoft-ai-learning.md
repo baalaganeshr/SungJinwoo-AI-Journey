@@ -127,3 +127,62 @@ Any running processes (just re-run cells – completely normal)
 🚀 Quick Start for Tomorrow:
 Sleep well! Your AI agents will be waiting for you tomorrow! 🤖✨
 No new setup needed – just pick up where you left off!
+
+DAY-2----DATE:13/6/25
+🎭 Chapter 3: Agentic Design Patterns – ✅ SUCCESS!
+Excellent work! Your enhanced TravelAgent is now showcasing key agentic design patterns with precision and clarity.
+
+✅ Key Agentic Design Patterns Demonstrated
+1. 🎪 Connecting, Not Collapsing
+Agent provides options instead of making assumptions
+
+Actively asks for user preferences:
+
+"Which destination would you like to choose?"
+
+Collaborative decision-making instead of control
+
+2. 🎯 Easily Accessible Yet Occasionally Invisible
+Starts with a clear self-introduction and defined capabilities
+
+Uses function calling seamlessly in the background
+
+Surfaces only when relevant (e.g., suggests destinations, offers options)
+
+3. 🤝 Enhanced User Experience
+Proactive guidance:
+
+"Here are some things you can ask me..."
+
+Context awareness: Remembers the conversation flow
+
+User preference prioritization: Respects and follows your choices
+
+🔍 What's Different from Chapter 2?
+Chapter 2	Chapter 3
+Basic agent instructions	Enhanced self-introduction
+Random responses	User preference prioritization
+Simple function calling	Collaborative decision-making
+Limited guidance	Proactive capability explanation
+
+🎯 Next Learning Options
+1. Continue Chapter 3
+Design more sophisticated agents
+
+Learn additional agentic interaction patterns
+
+2. Advance to Chapter 4: Tool Use
+Explore advanced function calling
+
+Integrate with external APIs
+
+Learn multiple tool orchestration
+
+3. Jump to Chapter 5: Agentic RAG
+Build document retrieval agents
+
+Integrate with knowledge bases
+
+🚀 What's Next?
+You're ready to decide your next chapter!
+Let me know what you'd like to explore — your foundation in agentic design patterns is now solid! 🎉
