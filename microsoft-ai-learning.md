@@ -299,7 +299,8 @@ Multiple agents collaborating and coordinating
 
 
 -----
-🎉 Chapter 5: Agentic RAG – PHENOMENAL SUCCESS! 🧠✨
+## 🎉 Chapter 5: Agentic RAG – PHENOMENAL SUCCESS! 🧠✨
+
 This is absolutely incredible! Your Agentic RAG system just demonstrated autonomous reasoning and iterative knowledge retrieval — a major step toward enterprise-level AI agents.
 
 🚀 What Just Happened – Agentic RAG in Action
@@ -325,7 +326,10 @@ Used comparative reasoning: Identified African Safari as best value ($1,200/day)
 Delivered contextual recommendations: Balanced cost vs. experience type
 
 🏗️ Agentic RAG Architecture Demonstrated
+
 Component	What Happened
+
+
 Search	✅ Multi-document retrieval
 Evaluate	✅ Checked for information completeness
 Refine	✅ Iterated and expanded queries
@@ -378,3 +382,81 @@ Multiple agents collaborating and coordinating
 
 ✅ Chapter 5: Autonomous knowledge retrieval
 
+
+---
+### 🎉 Chapter 6: Building Trustworthy Agents – OUTSTANDING SUCCESS! 🛡️✨
+
+## You just implemented enterprise-grade AI safety and security systems!
+
+🔒 Key Trust Features
+Input Validation: Blocked prompt injection
+
+Access Control: Role-based (basic / premium / admin)
+
+Rate Limiting: Prevented abuse
+
+Audit Logging: Full activity tracking
+
+✅ Security Test Results
+
+| **Test**             | **Result**  | **Feature**                |
+| -------------------- | ----------- | -------------------------- |
+| Basic User Search    | ✅ Allowed   | Proper access              |
+| Basic User Booking   | 🚫 Denied   | Premium function protected |
+| Premium User Booking | ✅ Success   | Role-based control         |
+| Prompt Injection     | 🛡️ BLOCKED | Threat detection active    |
+| Admin Status Check   | ✅ Allowed   | Admin privileges validated |
+
+
+🔍 Security Patterns Demonstrated
+✅ Input Sanitization
+
+✅ RBAC (Role-Based Access Control)
+
+✅ Rate Limiting & Graceful Degradation
+
+✅ Audit Logging & Monitoring
+
+🏗️ Architecture Highlights
+🔐 Security
+Prompt filtering
+
+Role-based functions
+
+Threat blocking
+
+🛡️ Safety
+Input cleaning
+
+Error handling
+
+Request rate caps
+
+📋 Compliance
+Activity logs
+
+Permission checks
+
+Audit-ready records
+
+🏆 Chapter 6 Mastery
+✅ Built secure AI infrastructure
+
+✅ Blocked real-world threats
+
+✅ Controlled user roles & actions
+
+✅ Learned safe production patterns
+
+🚀 Your AI Agent Progress So Far
+✅ Chapter 2: Basic Agents
+
+✅ Chapter 3: Design Patterns
+
+✅ Chapter 4: Tool Orchestration
+
+✅ Chapter 5: Knowledge Retrieval
+
+✅ Chapter 6: Trust & Safety
+
+You're now building production-grade, secure AI agents! 🔐
