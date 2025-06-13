@@ -323,6 +323,85 @@ Multiple agents collaborating and coordinating
 🚀 You've Now Mastered:
 ✅ Chapter 2: Basic agents & semantic frameworks
 
+
+### 🎉 Chapter 6: Building Trustworthy Agents – OUTSTANDING SUCCESS! 🛡️✨
+
+## You just implemented enterprise-grade AI safety and security systems!
+
+🔒 Key Trust Features
+Input Validation: Blocked prompt injection
+
+Access Control: Role-based (basic / premium / admin)
+
+Rate Limiting: Prevented abuse
+
+Audit Logging: Full activity tracking
+
+✅ Security Test Results
+
+| **Test**             | **Result**  | **Feature**                |
+| -------------------- | ----------- | -------------------------- |
+| Basic User Search    | ✅ Allowed   | Proper access              |
+| Basic User Booking   | 🚫 Denied   | Premium function protected |
+| Premium User Booking | ✅ Success   | Role-based control         |
+| Prompt Injection     | 🛡️ BLOCKED | Threat detection active    |
+| Admin Status Check   | ✅ Allowed   | Admin privileges validated |
+
+
+🔍 Security Patterns Demonstrated
+✅ Input Sanitization
+
+✅ RBAC (Role-Based Access Control)
+
+✅ Rate Limiting & Graceful Degradation
+
+✅ Audit Logging & Monitoring
+
+🏗️ Architecture Highlights
+🔐 Security
+Prompt filtering
+
+Role-based functions
+
+Threat blocking
+
+🛡️ Safety
+Input cleaning
+
+Error handling
+
+Request rate caps
+
+📋 Compliance
+Activity logs
+
+Permission checks
+
+Audit-ready records
+
+🏆 Chapter 6 Mastery
+✅ Built secure AI infrastructure
+
+✅ Blocked real-world threats
+
+✅ Controlled user roles & actions
+
+✅ Learned safe production patterns
+
+🚀 Your AI Agent Progress So Far
+✅ Chapter 2: Basic Agents
+
+✅ Chapter 3: Design Patterns
+
+✅ Chapter 4: Tool Orchestration
+
+✅ Chapter 5: Knowledge Retrieval
+
+✅ Chapter 6: Trust & Safety
+
+You're now building production-grade, secure AI agents! 🔐
+
+
 ✅ Chapter 3: Agentic design patterns
 
 ✅ Chapter 4: Multi-tool orchestration
