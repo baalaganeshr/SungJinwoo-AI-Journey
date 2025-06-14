@@ -48,3 +48,13 @@ class Solution:
         min_num = int(s.replace(min_digit, '0'))
         
         return max_num - min_num
+```
+## Today the lovable ai give challenge and also the offer 
+# I craete a website 
+![image](https://github.com/user-attachments/assets/6e9610d0-797c-43cc-b92a-8cfd622e142c)
+
+
+this is the app link 
+
+https://creative-studio-200.lovable.app
+
