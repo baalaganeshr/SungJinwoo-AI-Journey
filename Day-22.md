@@ -1,7 +1,7 @@
 # Day 22: Symmetric Tree (18/6/25)
 
 ## Problem Statement
-Given a binary tree, determine if it is a mirror of itself (symmetric around its center).
+Given a binary tree, determine if it  is a mirror of itself (symmetric around its center).
 
 **Constraints:**
 - 1 ≤ Number of nodes ≤ 1000
